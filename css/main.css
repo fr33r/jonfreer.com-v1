@@ -1,0 +1,942 @@
+/* Makes the html element's dimensions
+ * equivalent to the size of the broswer
+ * window.
+ */
+html{
+	/*Dimensions*/
+	width:				100%;
+	height:				100%;
+}
+
+/* Makes the <body> element's dimensions
+ * the same as its parent (<html>), get rid
+ * of it's margin, establishes the font for
+ * majority of the page, and sets a default
+ * black background behind the background 
+ * image.
+ */
+body{
+
+	/*Dimensions*/
+	width: 				100%;
+	height: 			100%;
+	
+	/*Padding/Margin/Border Formatting*/
+	margin: 			0%;
+
+	/*Font Formatting*/
+	font-family:		Helvetica;
+
+	/*Font Play*/
+	font-family: 'Source Sans Pro', sans-serif;
+	
+	/*Should set up back up fonts and font families*/
+	
+	/*Color Formatting*/
+	background-color: 	#000;
+}
+
+/* Makes the #mainContainer element have 
+ * the same dimensions as its parent element
+ * (<body>). Currently set up to have a
+ * background image set in page inline CSS.
+ */
+#mainContainer{
+
+	/*Dimensions*/
+	width: 				100%;
+	height: 			100%;
+}
+
+/* States that any element with the class
+ * container has a semi-transparent white
+ * background and black text.
+ */
+.dayContainer{
+
+	/*Color Formatting*/
+	background-color: 	rgba(255, 255, 255, 0.8);
+	color:				#000;	
+}
+
+/* States that any element with the class
+ * container has a semi-transparent white
+ * background and black text.
+ */
+.nightContainer{
+
+	/*Color Formatting*/
+	background-color: 	rgba(0, 0, 0, 0.8);
+	color:				#FFF;
+}
+
+/****************************************************/
+/*					NAVIGATION						*/
+/****************************************************/
+
+/* Makes the #navContainer have a width of 
+ * 800px and a height of 30px when zoomed 
+ * at 100% in the browser. It is positioned
+ * absolutely 10px below the top of the window,
+ * as well as 1% of the page's width from the
+ * right side of the window.
+ *
+ * NOTE:
+ * Should be removed in all honesty. These styles
+ * could be applied to the #navigation and this
+ * element could be removed.
+ */
+#navContainer{ 	/*<div>*/
+
+	/*Dimensions*/
+	width: 				800px;					
+	height: 			30px;
+	
+	/*Position*/
+	position: 			absolute;	
+	right: 				1%;
+	top: 				10px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* Makes the #navigation element have the
+ * same dimensions as it's parent (#navContainer).
+ */
+#navigation{	/*<nav>*/
+
+	/*Dimensions*/
+	width:				100%;
+	height:				100%;
+	
+	font-weight:		bold;
+}
+
+/* Makes the #navList have the same dimensions
+ * as it's parent (#navigation) as well removing
+ * default <ul> margin and padding.
+ */
+#navList{		/*<ul>*/
+
+	/*Dimensions*/
+	height: 			100%;
+	width: 				100%;
+	
+	/*Padding/Margin/Border Formatting*/
+	margin:				0%;
+	padding:			0%;
+}
+
+/* Makes the elements with the navListItem class
+ * have a hight the same as their parent element
+ * (#navList) and a width that is 25% of their
+ * parent element. These elements are floating to
+ * the left of one another. Also, all default <li>
+ * list styling is stripped.
+ */
+.navListItem{	/*<li>*/
+
+	/*Dimensions*/
+	height: 			100%;
+	width: 				25%;
+	
+	/*Position*/
+	float: 				left;
+	
+	/*List Formatting*/
+	list-style-type: 	none;
+}
+
+/* Makes the elements with the class navLink
+ * display as a block element, and assign it's
+ * width to the width of it's parent (.navListItem).
+ * It's hight is set to be 20px with a padding of 5 px
+ * applied to the top and bottom. It's text is centered,
+ * it's text color is set to black, and all default
+ * <a> styling is removed.
+ */
+.navLink{		/*<a>*/
+	
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				100%;
+	height: 			20px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px 5px 0px;
+	
+	/*Text Position*/
+	text-align: 		center;
+	
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#000;
+}
+
+#highSchoolNavLink{
+	-moz-border-radius-topleft: 2px;
+	-webkit-border-top-left-radius: 2px;
+	border-top-left-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+
+}
+
+#nowNavLink{
+	-moz-border-radius-topright: 2px;
+	-webkit-border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+/* States that any element that is an <a>
+ * element and has the class of navLink 
+ * should have a link of the color black
+ * once it has been visited. This is intentially
+ * set to be same as its "default" color established
+ * in the CSS rules for .navLink.
+ */
+.navLink:visited{
+	
+	/*Color Formatting*/
+	color: 				#000;
+}
+
+/* CSS rules regarding the psuedo class :hover.
+ * When an element with the class of navLink is
+ * hovered over, the text color is set to black,
+ * the background color is set to white, and the
+ * background color transition is set to take 0.5
+ * seconds. All of the most common browser CSS
+ * prefixes are used to support the  CSS transition 
+ * effect.
+ */
+.navLink:hover{
+
+	/*Color Formatting*/
+	color: 				#FFF;
+	background-color: 	#000;
+	
+	/*Transition*/
+	/*The background color specified is applied*/
+	/*over a period of time of one second with ease effect*/
+	
+	/*Safari and Chrome*/
+	-webkit-transition: background 0.5s ease;
+	/*Firefox*/
+	-moz-transition: 	background 0.5s ease;
+	/*IE*/
+	-ms-transition: 	background 0.5s ease;
+	/*Opera*/
+	-o-transition: 		background 0.5s ease;
+	/*Default*/
+	transition: 		background 0.5s ease;
+}
+
+/* Makes any element with the class of
+ * selectedNavLink have white text and 
+ * a black background. Used to show the user
+ * which navItem they are currently "under".
+ * (Which time era the current page they are
+ * on falls under).
+ */
+.selectedNavLink{
+
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				100%;
+	height: 			20px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px 5px 0px;
+	
+	/*Text Position*/
+	text-align: 		center;
+	
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#FFF;
+	background-color:	#000;
+}
+
+/* Makes any <a> element with the class of
+ * selectedNavLink have white text once it
+ * has been visited.
+ */
+.selectedNavLink:visited{
+
+	/*Color Formatting*/
+	color: 				#FFF;
+}
+
+/* Says that any element with the class of
+ * dropdownList should have relative positioning
+ * (simply to achieve access to z-index), should be
+ * stripped of all default margin and padding, have
+ * a z-index of 1, and not be displayed (as well as
+ * not take up any space).
+ */
+.dropdownList{
+
+	/*Position*/
+	position: 			relative;
+	z-index: 			1;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			0px;
+	margin: 			0px;
+	
+	/*Display*/
+	display: 			none;
+	
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+
+	font-weight: normal;
+}
+
+/* States that all elements with the DDItem
+ * class should be stripped by all default
+ * list styling, and should left aligned text.
+ */
+.DDItem{
+
+	/*List Formatting*/
+	list-style: 		none;
+	
+	/*Text Formatting*/
+	text-align: 		left;
+}
+
+/* States that any element with the class of
+ * DDItemLink will remove all text decoration,
+ * have a semi-transparent white background,
+ * display as a block element, have a width of 
+ * 190px and have 5px padding on all four sides.
+ */
+.DDItemLink{
+
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#000;
+	
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				190px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px;
+}
+
+.lastDDItemLink{
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+/* States that any element with the class of
+ * nightDDItemLink will remove all text decoration,
+ * have a semi-transparent white background,
+ * display as a block element, have a width of 
+ * 190px and have 5px padding on all four sides.
+ */
+.nightDDItemLink{
+
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#FFF;
+	
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				190px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px;
+}
+
+/* CSS rules that apply to <a> elements with
+ * the class of DDItemLink. Changes the text
+ * color to black.
+ */
+.DDItemLink:visited{
+
+	/*Color Formatting*/
+	color: 				#000;
+}
+
+/* CSS rules that apply to <a> elements with
+ * the class of DDItemLink. Changes the text
+ * color to black.
+ */
+.nightDDItemLink:visited{
+
+	/*Color Formatting*/
+	color: 				#FFF;
+}
+
+/* Claims that any element with the .DDItemLink
+ * class and is hovered over will have a background
+ * color of black, white text and will a 0.5 second
+ * transition period of the background colors. All
+ * major browser CSS prefixes are used.
+ *
+ * NOTE
+ * This appears to be the same as another selector
+ * grouping. Consolidation should be considered.
+ */
+.DDItemLink:hover{
+
+	/*Color Formatting*/
+	background-color: 	#000;
+	color: 				#FFF;
+	
+	/*Transition*/
+	/*The background color specified is applied*/
+	/*over a period of time of one second with ease effect*/
+	
+	/*Safari and Chrome*/
+	-webkit-transition: background 0.5s ease;
+	/*Firefox*/
+	-moz-transition: 	background 0.5s ease;
+	/*IE*/
+	-ms-transition: 	background 0.5s ease;
+	/*Opera*/
+	-o-transition: 		background 0.5s ease;
+	/*Default*/
+	transition: 		background 0.5s ease;
+}
+
+/* Claims that any element with the .DDItemLink
+ * class and is hovered over will have a background
+ * color of black, white text and will a 0.5 second
+ * transition period of the background colors. All
+ * major browser CSS prefixes are used.
+ *
+ * NOTE
+ * This appears to be the same as another selector
+ * grouping. Consolidation should be considered.
+ */
+.nightDDItemLink:hover{
+
+	/*Color Formatting*/
+	background-color: 	#FFF;
+	color: 				#000;
+	
+	/*Transition*/
+	/*The background color specified is applied*/
+	/*over a period of time of one second with ease effect*/
+	
+	/*Safari and Chrome*/
+	-webkit-transition: background 0.5s ease;
+	/*Firefox*/
+	-moz-transition: 	background 0.5s ease;
+	/*IE*/
+	-ms-transition: 	background 0.5s ease;
+	/*Opera*/
+	-o-transition: 		background 0.5s ease;
+	/*Default*/
+	transition: 		background 0.5s ease;
+}
+
+/* States that any element that has the class
+ * navListItem and is hovered over, the element(s)
+ * with the class .dropdownList that is/are a child(ren)
+ * of the .navListItem being hovered over is/are displayed as
+ * block element(s). This is used to display the
+ * appropriate dropdown menu when a navItem is hovered over.
+ */
+.navListItem:hover .dropdownList{
+	
+	/*Display*/
+	display: 			block;
+}
+
+/* States that all <br> elements are to clear
+ * any float position that may be currently 
+ * not cleared, as well as stripping all defauly
+ * margin and padding.
+ *
+ * NOTE
+ * I am presently not using any br elements. From
+ * what I can gather, it is not necessary to clear
+ * floating positioned items if they are contained 
+ * within a parent element. If this is found true, 
+ * this can be completely removed.
+ */
+br{
+	/*Position*/
+	clear: 				both;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			0%;
+	margin: 			0%;
+}
+
+/***JQUERY DROPDOWN CLASSES***/
+
+.JQueryUnselectedNavLink{
+
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				100%;
+	height: 			20px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px 5px 0px;
+	
+	/*Text Position*/
+	text-align: 		center;
+	
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#000; 
+}
+
+.nightJQueryUnselectedNavLink{
+
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				100%;
+	height: 			20px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px 5px 0px;
+	
+	/*Text Position*/
+	text-align: 		center;
+	
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#FFF; 
+}
+
+.JQuerySelectedNavLink{
+
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				100%;
+	height: 			20px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px 5px 0px;
+	
+	/*Text Position*/
+	text-align: 		center;
+	
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#FFF;
+	background-color:	#000;
+}
+
+.nightJQuerySelectedNavLink{
+
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				100%;
+	height: 			20px;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px 5px 0px;
+	
+	/*Text Position*/
+	text-align: 		center;
+	
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Color Formatting*/
+	color: 				#000;
+	background-color:	#FFF;
+}
+
+
+.JQueryDropdownList{
+	
+	/*Position*/
+	position: 			relative;
+	z-index: 			1;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			0px;
+	margin: 			0px;
+	
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+
+	font-weight: normal;
+}
+
+.JQueryUnselectedNavLink:hover{
+	/*Color Formatting*/
+	color: 				#FFF;
+	background-color: 	#000;
+	
+	/*Transition*/
+	/*The background color specified is applied*/
+	/*over a period of time of one second with ease effect*/
+	
+	/*Safari and Chrome*/
+	-webkit-transition: background 0.5s ease;
+	/*Firefox*/
+	-moz-transition: 	background 0.5s ease;
+	/*IE*/
+	-ms-transition: 	background 0.5s ease;
+	/*Opera*/
+	-o-transition: 		background 0.5s ease;
+	/*Default*/
+	transition: 		background 0.5s ease;
+}
+
+.nightJQueryUnselectedNavLink:hover{
+	/*Color Formatting*/
+	color: 				#000;
+	background-color: 	#FFF;
+	
+	/*Transition*/
+	/*The background color specified is applied*/
+	/*over a period of time of one second with ease effect*/
+	
+	/*Safari and Chrome*/
+	-webkit-transition: background 0.5s ease;
+	/*Firefox*/
+	-moz-transition: 	background 0.5s ease;
+	/*IE*/
+	-ms-transition: 	background 0.5s ease;
+	/*Opera*/
+	-o-transition: 		background 0.5s ease;
+	/*Default*/
+	transition: 		background 0.5s ease;
+}
+
+/****************************************************/
+/*						CONTENT						*/
+/****************************************************/
+
+/* States that the #contentContainer element
+ * will have a width of 98% of its parent
+ * (#mainContainer) and is absolutely positioned 
+ * 1% of the width of the parent element from the
+ * left and right, as well as 50px from the top and
+ * bottom of the parent element.
+ */
+#contentContainer{
+
+	/*Dimensions*/
+	width: 				98%;
+	
+	/*Position*/
+	position: 			absolute;
+	left: 				1%;
+	right: 				1%;
+	bottom: 			50px;
+	top: 				50px;
+
+	overflow: hidden;
+}
+
+/* States that any elements with the class of
+ * contentText no longer have default margin, and
+ * are surrounded by 10px padding.
+ */
+.contentText{
+
+	/*Padding/Margin/Border Formatting*/
+	margin: 			0%;
+	padding: 			10px;
+}
+
+.contactInfoHeader{
+	padding: 5px 5px;
+	margin: 0px;
+}
+
+/****************************************************/
+/*						FOOTER						*/
+/****************************************************/
+
+/* States that the #footerContainer element
+ * has a width that is 98% of the width of it's
+ * parent (#mainContainer) and a height of 20px.
+ * It is absolutely positioned with 1% of the parent's
+ * width on the left and right, as well as 10px from
+ * the bottom of the parent element. The text color is
+ * set to white, and has 5px padding on the left and
+ * right.
+ */
+#footerContainer{
+
+	/*Dimensions*/
+	width: 				98%;
+	height: 			20px;
+	
+	/*Postition*/
+	position: 			absolute;
+	bottom: 			10px;
+	left: 				1%;
+	right: 				1%;
+	
+	/*Padding/Margin/Border Formatting*/
+	padding: 			5px 0px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* States that the #footerTable element has a width
+ * that is 99% the width of it's parent (#footerContainer)
+ * and has a height equivalent to its parent. The element is 
+ * centered  by equally distributing margin on both sides,
+ * is displayed as a table, and is given a font size of 12px.
+ */
+#footerTable{
+
+	/*Dimensions*/
+	width: 				99%;
+	height: 			100%;
+	
+	/*Padding/Margin/Border Formatting*/
+	margin: 			auto;
+	
+	/*Display*/
+	display: 			table;
+	
+	/*Font Formatting*/
+	font-size: 			12px;
+	font-weight:		bold;
+}
+
+/* States that the #footerRow element is displayed
+ * as a table.
+ */
+#footerRow{
+
+	/*Display*/
+	display: 			table-row;
+}
+
+/* Any element with the class socialMediaLinks
+ * has the default text decoration removed, and is 
+ * displayed as a block element. It is assigned a width
+ * and height of 20px.
+ */
+.socialMediaLinks{
+
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				20px;
+	height: 			20px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	float: left;
+}
+
+/* Any element with the class socialMediaLinks
+ * has the default text decoration removed, and is 
+ * displayed as a block element. It is assigned a width
+ * and height of 20px.
+ */
+.socialMediaLinksBig{
+
+	/*Link Formatting*/
+	text-decoration: 	none;
+	
+	/*Display*/
+	display: 			block;
+	
+	/*Dimensions*/
+	width: 				40px;
+	height: 			40px;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	float: left;
+}
+
+/* The #facebookLink element is assigned a background image,
+ * and states that the image is not to be repeated. It is
+ * floating to the left.
+ */
+#facebookLink{
+	/*Image Formatting*/
+	background-image: 	url(../img/social_media/facebook_logo.png);
+	background-repeat: 	no-repeat;
+}
+
+/* The #facebookLink element is assigned a background image,
+ * and states that the image is not to be repeated. It is
+ * floating to the left.
+ */
+#facebookLinkBig{
+	/*Image Formatting*/
+	background-image: 	url(../img/social_media/facebook_logo_big.png);
+	background-repeat: 	no-repeat;
+	background-size: contain;
+
+	margin: 0px 0px 10px 10px;
+}
+
+/* States that the #linkedinLink element has a background
+ * image and is not to be repeated. It is floated to the left
+ * and has a margin of 5px on it's left side.
+ */
+#linkedinLink{
+	/*Image Formatting*/
+	background-image: 	url(../img/social_media/linkedin_logo.png);
+	background-repeat: 	no-repeat;
+	
+	/*Padding/Margin/Border Formatting*/
+	margin: 0px 0px 0px 5px;
+}
+
+/* States that the #linkedinLink element has a background
+ * image and is not to be repeated. It is floated to the left
+ * and has a margin of 5px on it's left side.
+ */
+#linkedinLinkBig{
+	/*Image Formatting*/
+	background-image: 	url(../img/social_media/linkedin_logo_big.png);
+	background-repeat: 	no-repeat;
+	background-size: contain;
+
+	
+	/*Padding/Margin/Border Formatting*/
+	margin: 0px 0px 10px 5px;
+}
+
+/* States that the #authorFooterItem has a width of
+ * one third the size of it's parent (#footerTable),
+ * the text is center both horizontally and vertically,
+ * and it is displayed as a table cell.
+ */
+#authorFooterItem{
+	
+	/*Text Formatting*/
+	text-align: 		center;
+}
+
+/* The #contactMeFooterItem has a width of one third of
+ * parent element (#footerTable), it's text is centered
+ * horizontally and vertically, and it is displayed as
+ * a table cell.
+ */
+#contactMeFooterItem{
+	
+	/*Text Formatting*/
+	text-align: 		right;
+}
+
+/* The #contactMeLink element is stripped of it default 
+ * text decoration.
+ */
+#contactMeLink{
+
+	/*Link Formatting*/
+	text-decoration: 	none;
+}
+
+/* The #contactMeLink element is given a text decoration of
+ * underline when it is hovered over.
+ */
+#contactMeLink:hover{
+
+	/*Link Formatting*/
+	text-decoration: 	underline;
+}
+
+/* The #contactMeLink element (<a>) is given a color of black
+ * once it has been visited.
+ */
+.dayLink:visited{
+
+	/*Color Formatting*/
+	color: 				#000;
+}
+
+.dayLink{
+	/*Color Formatting*/
+	color: 				#000;
+}
+
+.nightLink{
+	/*Color Formatting*/
+	color: 				#FFF;
+}
+
+.nightLink:visited{
+	/*Color Formatting*/
+	color: 				#FFF;
+}
+
+/* States that the elements with the footerItem class have
+ * width that is one third of its parent (#footerTable)
+ * and is displayed as a table cell.
+ */
+.footerItem{
+
+	/*Dimensions*/
+	width: 				33.33%;
+	
+	/*Text Formatting*/
+	vertical-align: 	middle;
+	
+	/*Display*/
+	display: 			table-cell;
+}

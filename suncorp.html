@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		
+		<!-- Favorite Icon -->
+		<link rel = "shortcut icon" href= "img/favicon/favicon.ico" />
+		
+		<!-- Page Title -->
+		<title>Jon Freer</title>
+		
+		<!-- Page Description -->
+		<meta name = "description" content = "My First Internship.">
+		
+		<!-- External CSS -->
+		<link rel = "stylesheet" href = "css/main.css" type = "text/css">
+		<link rel = "stylesheet" href = "css/sliderCSS.css" type = "text/css">
+
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Include JQuery Library from Content Delivery Network (CDN) 				-->
+		<!-- Advantage: Many users have already downloaded JQuery to their machines. 	-->
+		<!-- Thus, when loading this site, JQuery will be loaded from cache. 			-->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<!-- Include the JQuery functions that I authored. -->
+		<script src = "js/animations2.js"></script>
+		<script src = "js/slideshowAnimations.js"></script>
+		<script src = "js/nightOrDay.js"></script>
+		
+		<!-- Background Image CSS -->
+		<style type = "text/css">
+			#content{
+				
+				/*Dimensions*/
+				width: 30%;
+				min-height: 50%;
+				max-height: 100%;
+				
+				/*Overflow*/
+				overflow: auto;
+				
+				/*Position*/
+				float: left;
+				
+				/*Border-Radius*/
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+			}
+			#videoContainer{
+				
+				/*Dimensions*/
+				width: 40%;
+				min-height: 0%;
+				max-height: 100%;
+				
+				/*Position*/
+				position: relative;
+				left: 30%;
+				float: left;
+				
+				/*Overflow*/
+				overflow: hidden;
+
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+		
+			}
+			#commercialVideo{
+			
+				/*Dimensions*/
+				width: 98%;
+				
+				/*Padding/Margin/Border Formatting*/
+				padding: 1%;
+			}
+			#videoCaption{
+			
+				/*Text Formatting*/
+				text-align: center;
+				padding: 1%;
+			}
+			#slide1{
+				
+				/*Image*/
+				background-image: url(img/suncorp/suncorp_pic_1.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			#slide2{
+
+				/*Image*/
+				background-image: url(img/suncorp/suncorp_pic_2.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<!-- Main Container -->
+		<div id = "mainContainer">
+			<div id = "fadeshow">
+				<div id = "slide1" class = "slide firstSlide"></div>
+				<div id = "slide2" class = "slide"></div>
+			</div>
+			<!-- Navigation Container -->
+			<div id = "navContainer" class = "dayContainer">
+				<nav id = "navigation">
+					<ul id = "navList">
+						<li id = "highSchoolNavItem" class = "navListItem">
+							<a href = "wkhs.html" id = "highSchoolNavLink" class = "navLink">
+								High School
+							</a>
+							<ul id = "highSchoolDDList" class = "dropdownList dayContainer">
+								<li class = "DDItem">
+									<a href = "wkhs.html" class = "DDItemLink">Worthington Kilbourne High School</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "aaaHockey.html" class = "DDItemLink">AAA Hockey</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "teamColumbusHockey.html" class = "DDItemLink">Team Columbus</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "wkhsHockey.html" class = "DDItemLink lastDDItemLink">High School Hockey</a>
+								</li>
+							</ul>
+						</li>
+						<li id = "collegeNavItem" class = "navListItem">
+							<a href = "miami.html" id = "collegeNavLink" class = "navLink selectedNavLink" >
+								College
+							</a>
+							<ul id = "collegeDDList" class = "dropdownList dayContainer">
+								<li class = "DDItem">
+									<a href = "miami.html" class = "DDItemLink">Miami</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "phigammadelta.html" class = "DDItemLink">FIJI</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "emma.html" class = "DDItemLink">Emma</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "suncorp.html" class = "DDItemLink">Suncorp Internship</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "collegeProjects.html" class = "DDItemLink">College Research</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "graduation.html" class = "DDItemLink lastDDItemLink">Graduation</a>
+								</li>
+							</ul>
+						</li>
+						<li id = "professionNavItem" class = "navListItem">
+							<a href = "tcs.html" id = "professionNavLink" class = "navLink" >
+								Profession
+							</a>
+							<ul id = "professionDDList" class = "dropdownList dayContainer">
+								<li class = "DDItem">
+									<a href = "tcs.html" class = "DDItemLink lastDDItemLink">TATA Consultancy Services</a>
+								</li>
+							</ul>
+						</li>
+						<li id = "nowNavItem" class = "navListItem">
+							<a href = "now.html" id = "nowNavLink" class = "navLink">
+								Now
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<!-- Content Container -->
+			<div id = "contentContainer">
+				<div id = "content" class = "dayContainer">
+					<p class = "contentText">
+						In the winter of my junior year at Miami, I interviewed for an Australian 
+						company called Suncorp. After multiple rounds of interviews
+						over the web, I received an offer for a ten week summer internship. 
+					</p>
+					<p class = "contentText">
+						The internship was based on Miami's campus in Benton Hall, where the college
+						of engineering and computing resided. Majority of our communication was
+						done over the web with various employees in Sydney, Australia, including the 
+						Suncorp Business Services CEO, Jeff Smith, who also attended Miami University.
+					</p>
+					<p class = "contentText">
+						I was excited as this was my first opportunity to apply the concepts I 
+						had learned in the classroom for a business need. It helped me get an idea
+						of where my skills matched up with others, while still having the comfort of
+						working in a familiar environment.
+					</p>
+					<p class = "contentText">
+						Suncorp actively practices and promotes the Agile SDLC and have even applied its
+						concepts towards many of its business processes. I underwent nearly 20 hours of
+						Agile workshops before the internship started to get acquainted with the SDLC.
+					</p>
+					<p class = "contentText">
+						Suncorp left it to us to determine a project that would benefit Suncorp's business
+						needs rather than assigning us a project. After much research and many presentations
+						to Suncorp employees, we chose to produce a safe driving application that we
+						later named Safe Driving Mate (SDM).
+					</p>
+					<p class = "contentText">
+						SDM was developed in an IDE called Xamarin, a cross-platform IDE that was 
+						capable of compiling C# into Objective-C making it possible to develop iOS
+						applications without any Objective-C knowledge. At first, our team had attempted
+						to learn Objective-C with the hopes of creating the app in the iOS native language.
+						However, the task became more daunting as no student from Miami at this time
+						had received Objective-C lessons from a curriculum. Xamarin was recommended to
+						us by the current employees of Suncorp as it was the tool of choice for them.
+					</p>
+					<p class = "contentText">
+						The internship provided us with knowledge of how to develop software in a team 
+						setting, as well as how to showcase and prepare a product for a client. By the tenth
+						week, we had produced a fully functional application that alerted drivers when they
+						had made sharp turns, hard stops, or excessive starts. The user could view the past
+						trips, earn badges and points, and even post their success on Facebook for all
+						of their friends to see. We completed a hand-off to Suncorp of the app and they
+						stated that after review, they planned to launch the app to the iOS app store.
+					</p>
+				</div>
+				
+				<div id = "videoContainer" class = "dayContainer">
+					<!-- Load the video ASAP -->
+					<video id = "commercialVideo" preload controls>
+						<!-- Supported by Chrome, Firefox, and Opera -->
+						<source src = "vid/Commercial.webm">
+						<!-- Supported by Internet Explorer, Chrome, Firefox, and Safari -->
+						<source src = "vid/Commercial.mp4">
+						<!-- IF FORMATS NOT SUPPORTED -->
+						You're browser doesn't support mp4 or webm video formats.
+					</video>
+					<p id = "videoCaption">
+						A commercial we filmed and showcased to Suncorp once the app was completed.
+					</p>
+				</div>
+			</div>
+			
+			<!-- Footer Container -->
+			<div id = "footerContainer" class = "dayContainer">
+				<div id = "footerTable">
+					<div id = "footerRow">
+						<div id = "socialMediaFooterItem" class = "footerItem">
+							<a id = "facebookLink" class = "socialMediaLinks" href = "https://www.facebook.com/jon.freer"></a>
+							<a id = "linkedinLink" class = "socialMediaLinks" href = "https://www.linkedin.com/pub/jon-freer/61/50/24"></a>
+						</div>
+						<div id = "authorFooterItem" class = "footerItem">
+							Designed and Developed by Jon Freer
+						</div>
+						<div id = "contactMeFooterItem" class = "footerItem">
+							<a id = "contactMeLink" class = "dayLink" href = "contactMe.html">Contact Me</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

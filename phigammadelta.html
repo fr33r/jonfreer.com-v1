@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		
+		<!-- Favorite Icon -->
+		<link rel = "shortcut icon" href= "img/favicon/favicon.ico" />
+		
+		<!-- Page Title -->
+		<title>Jon Freer</title>
+		
+		<!-- Page Description -->
+		<meta name = "description" content = "FIJI.">
+		
+		<!-- External CSS -->
+		<link rel = "stylesheet" href = "css/main.css" type = "text/css">
+		<link rel = "stylesheet" href = "css/sliderCSS.css" type = "text/css">
+
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Include JQuery Library from Content Delivery Network (CDN) 				-->
+		<!-- Advantage: Many users have already downloaded JQuery to their machines. 	-->
+		<!-- Thus, when loading this site, JQuery will be loaded from cache. 			-->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<!-- Include the JQuery functions that I authored. -->
+		<script src = "js/animations2.js"></script>
+		<script src = "js/slideshowAnimations.js"></script>
+		<script src = "js/nightOrDay.js"></script>
+		
+		<!-- Background Image CSS -->
+		<style type = "text/css">
+			#content{
+				
+				/*Dimensions*/
+				width: 30%;
+				min-height: 0%;
+				max-height: 100%;
+				
+				/*Overflow*/
+				overflow: auto;
+				
+				/*Border-Radius*/
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+			}
+			#slide1{
+
+				/*Image*/
+				background-image: url(img/fiji/fiji_freshman_year.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			#slide2{
+
+				/*Image*/
+				background-image: url(img/fiji/fiji_sophomore_year.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide3{
+				
+				/*Image*/
+				background-image: url(img/fiji/junior_formal_1.JPG);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide4{
+
+				/*Image*/
+				background-image: url(img/fiji/fiji_fire_2.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide5{
+
+				/*Image*/
+				background-image: url(img/fiji/fiji_fire_3.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide6{
+
+				/*Image*/
+				background-image: url(img/fiji/fiji_fire_6.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide7{
+
+				/*Image*/
+				background-image: url(img/fiji/junior_fiji_island_2.JPG);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide8{
+
+				/*Image*/
+				background-image: url(img/fiji/junior_gbd_1.JPG);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide9{
+
+				/*Image*/
+				background-image: url(img/fiji/junior_semiformal_2.JPG);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide10{
+
+				/*Image*/
+				background-image: url(img/fiji/junior_semiformal_3.JPG);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#slide11{
+
+				/*Image*/
+				background-image: url(img/fiji/junior_theta_formal_1.JPG);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+
+		</style>
+	</head>
+	
+	<body>
+		<!-- Main Container -->
+		<div id = "mainContainer">
+		
+			<!-- Fade Show-->
+			<div id = "fadeshow">
+				<div id = "slide1" class = "slide firstSlide"></div>
+				<div id = "slide2" class = "slide"></div>
+				<div id = "slide3" class = "slide"></div>
+				<div id = "slide4" class = "slide"></div>
+				<div id = "slide5" class = "slide"></div>
+				<div id = "slide6" class = "slide"></div>
+				<div id = "slide7" class = "slide"></div>
+				<div id = "slide8" class = "slide"></div>
+				<div id = "slide9" class = "slide"></div>
+				<div id = "slide11" class = "slide"></div>
+			</div>
+			
+			<!-- Navigation Container -->
+			<div id = "navContainer" class = "dayContainer">
+				<nav id = "navigation">
+					<ul id = "navList">
+						<li id = "highSchoolNavItem" class = "navListItem">
+							<a href = "wkhs.html" id = "highSchoolNavLink" class = "navLink">
+								High School
+							</a>
+							<ul id = "highSchoolDDList" class = "dropdownList dayContainer">
+								<li class = "DDItem">
+									<a href = "wkhs.html" class = "DDItemLink">Worthington Kilbourne High School</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "aaaHockey.html" class = "DDItemLink">AAA Hockey</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "teamColumbusHockey.html" class = "DDItemLink">Team Columbus</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "wkhsHockey.html" class = "DDItemLink lastDDItemLink">High School Hockey</a>
+								</li>
+							</ul>
+						</li>
+						<li id = "collegeNavItem" class = "navListItem">
+							<a href = "miami.html" id = "collegeNavLink" class = "selectedNavLink" >
+								College
+							</a>
+							<ul id = "collegeDDList" class = "dropdownList dayContainer">
+								<li class = "DDItem">
+									<a href = "miami.html" class = "DDItemLink">Miami</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "phigammadelta.html" class = "DDItemLink">FIJI</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "emma.html" class = "DDItemLink">Emma</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "suncorp.html" class = "DDItemLink">Suncorp Internship</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "collegeProjects.html" class = "DDItemLink">College Research</a>
+								</li>
+								<li class = "DDItem">
+									<a href = "graduation.html" class = "DDItemLink lastDDItemLink">Graduation</a>
+								</li>
+							</ul>
+						</li>
+						<li id = "professionNavItem" class = "navListItem">
+							<a href = "tcs.html" id = "professionNavLink" class = "navLink" >
+								Profession
+							</a>
+							<ul id = "professionDDList" class = "dropdownList dayContainer">
+								<li class = "DDItem">
+									<a href = "tcs.html" class = "DDItemLink lastDDItemLink">TATA Consultancy Services</a>
+								</li>
+							</ul>
+						</li>
+						<li id = "nowNavItem" class = "navListItem">
+							<a href = "now.html" id = "nowNavLink" class = "navLink">
+								Now
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<!-- Content Container -->
+			<div id = "contentContainer">
+				<div id = "content" class = "dayContainer">
+					<p class = "contentText">
+						Soon after arriving to Miami University in 2010, I took interest in the 
+						well-known Greek community. I found myself spending time with the brothers
+						of Phi Gamma Delta (FIJI) and I was asked to attend their recruitment events.
+					</p>
+					<p class = "contentText">
+						Amidst the pressure that the chapter was receiving from the university, I chose
+						to pledge for the fraternity. During my pledge process, I became very close with
+						my small pledge class of fifteen people as we all dedicated a significant
+						amount of time and effort to join one of the best fraternities Miami had to offer.
+					</p>
+					<p class = "contentText">
+						During my sophomore year, I was elected house manager for FIJI. I was in charge of 
+						any and all house repairs, fire code inspections, property appearance, and house utilities.
+					</p>
+					<p class = "contentText">
+						Nearly all of the incredible memories I have during my four years are attributed to 
+						my involvement in FIJI. I am truly proud to be a member and grateful for the friendships,
+						memories, values, traditions, and opportunities the fraternity gave me.
+					</p>
+					<p class = "contentText">
+						In May of 2013, the fraternity house was a victim of an arson and nearly burned down.
+						All of the brothers stored their belongings in the house as an alternative 
+						to bringing them back home for the summer. Many of my closest friends lost
+						everything they owned and walked away with just the clothes on their
+						back.
+					</p>
+					<p class = "contentText">
+						Despite thorough investigation, the person(s) responsible have not been brought
+						to justice. However, reconstruction has begun, and is expected to be completed in
+						August of 2015.
+					</p>
+					<p class = "contentText">
+						As the result of proactive actions by our elected executive board, our chapter
+						made an agreement with the Sigma Chi fraternity to occupy their vacant house on
+						campus until our situation was resolved.
+					</p>
+				</div>
+			</div>
+			
+			<!-- Footer Container -->
+			<div id = "footerContainer" class = "dayContainer">
+				<div id = "footerTable">
+					<div id = "footerRow">
+						<div id = "socialMediaFooterItem" class = "footerItem">
+							<a id = "facebookLink" class = "socialMediaLinks" href = "https://www.facebook.com/jon.freer"></a>
+							<a id = "linkedinLink" class = "socialMediaLinks" href = "https://www.linkedin.com/pub/jon-freer/61/50/24"></a>
+						</div>
+						<div id = "authorFooterItem" class = "footerItem">
+							Designed and Developed by Jon Freer
+						</div>
+						<div id = "contactMeFooterItem" class = "footerItem">
+							<a id = "contactMeLink" class = "dayLink" href = "contactMe.html">Contact Me</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

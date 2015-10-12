@@ -1,0 +1,31 @@
+/* Element with the id of "fadeshow" represents a "fade show"
+ * which is essentially a slide show except the images fade in
+ * and out, rather then sliding out of view. This element has been
+ * given a height and width the size of the parent element which
+ * is #mainContainer.
+ */
+#fadeshow{
+
+	/*Dimensions*/
+	width: 100%;
+	height: 100%;
+}
+
+.slide{
+
+	/*Dimensions*/
+	height: 100%;
+	width: 100%;
+	
+	/*Display*/
+	display: none;
+	
+	position: relative;
+}
+
+.firstSlide{
+
+	/*Display*/
+	display: block;
+}
+
